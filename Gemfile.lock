@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/DigitalInnovation/melomel.rb.git
+  revision: 1a2a0f3ae05c142add87f4dd41eabf237981899d
+  specs:
+    melomel (0.7.0)
+      nokogiri (>= 1.6.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -40,5 +47,6 @@ PLATFORMS
 DEPENDENCIES
   asrake (~> 0.14.1)
   cucumber (~> 0.10.0)
+  melomel!
   rspec (~> 2.14.1)
   zip (~> 2.0.2)

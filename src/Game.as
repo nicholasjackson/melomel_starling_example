@@ -14,6 +14,8 @@ package
     import starling.events.KeyboardEvent;
     import starling.textures.Texture;
     import starling.utils.AssetManager;
+
+    import melomel.display.StarlingStage;
     
     import utils.ProgressBar;
 
@@ -75,6 +77,10 @@ package
             
             addEventListener(Event.TRIGGERED, onButtonTriggered);
             stage.addEventListener(KeyboardEvent.KEY_DOWN, onKey);
+
+            //Melomel.debug = true;
+            Melomel.stage = new StarlingStage(stage);
+            Melomel.connect();
         }
         
         private function showMainMenu():void
